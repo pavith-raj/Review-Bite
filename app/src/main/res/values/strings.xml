@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">userpage</string>
+    <string name="open">Open drawer</string>
+    <string name="close">Close drawer</string>
+    <string name="view_reviews">View Reviews</string>
+    <string name="upload_image_4">Upload Image 4</string>
+    <string name="upload_image_3">Upload Image 3</string>
+    <string name="upload_image_2">Upload Image 2</string>
+</resources>

@@ -1,0 +1,172 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3">
+
+    <!-- Restaurant Image fixed at the top -->
+    <ImageView
+        android:id="@+id/image_restaurant"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/a1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Restaurant Name heading fixed below the image -->
+    <TextView
+        android:id="@+id/restaurant_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=" HOTEL NEW ACCENT"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#0F0E0E"
+        app:layout_constraintTop_toBottomOf="@id/image_restaurant"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Two Rows of Images without gaps -->
+    <GridLayout
+        android:id="@+id/image_grid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/restaurant_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- First Image -->
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/a2" />
+
+        <!-- Second Image -->
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/a4" />
+
+        <!-- Third Image -->
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/a1" />
+
+        <!-- Fourth Image -->
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/a3" />
+
+    </GridLayout>
+
+    <!-- Scrollable Description -->
+    <ScrollView
+        android:id="@+id/scrollable_description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/image_grid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/address_text">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Description of the restaurant -->
+            <TextView
+                android:id="@+id/description_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is the description of Pallki Restaurant. It is known for its fine dining experience, with a variety of delicious dishes from around the world."
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Restaurant Address TextView -->
+    <TextView
+        android:id="@+id/address_text"
+        android:layout_width="396dp"
+        android:layout_height="88dp"
+        android:background="#0D0C0C"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="odhi, Lodhi Road, Bharti Nagar, New Delhi, 10003"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/buttons_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scrollable_description" />
+
+    <!-- Buttons at the bottom with increased size -->
+    <LinearLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#1D1B1B"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Menu Button with increased size -->
+        <Button
+            android:id="@+id/button_menu"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="Menu"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="?attr/selectableItemBackground"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- Review Button with increased size -->
+        <Button
+            android:id="@+id/button_review"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="Review"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="?attr/selectableItemBackground"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

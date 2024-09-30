@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".itemreview"
+            android:exported="false" />
+        <activity
+            android:name=".UserReviewAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".ReviewActivity4"
+            android:exported="false" />
+        <activity
+            android:name=".Menuactivity4"
+            android:exported="false" />
+        <activity
+            android:name=".Maharaja"
+            android:exported="false" />
+        <activity
+            android:name=".maharajagrand"
+            android:exported="false" />
+        <activity
+            android:name=".reviewactivity3"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".NewAccent"
+            android:exported="false" /> <!-- Activity registrations -->
+        <activity
+            android:name=".item_review"
+            android:exported="false" />
+        <activity
+            android:name=".ReviewActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".madhavans"
+            android:exported="false" />
+        <activity
+            android:name=".ReviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ImageViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PalkiHotel"
+            android:exported="false" />
+        <activity
+            android:name=".Homepage2"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Registration"
+            android:exported="false" />
+        <activity
+            android:name=".Signin"
+            android:exported="false" /> <!-- Main activity that launches the app -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

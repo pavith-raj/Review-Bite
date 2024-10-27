@@ -20,19 +20,24 @@
 
 Here are some screenshots that showcase the **ReviewBite** application:
 
-### 1. Home Screen
-![Home Screen](screenshots/home_screen.png)
+### 1. Splash Screen
+![Splash Screen](Screenshot/logo_reveal.jpg)
 
-### 2. Restaurant Listing
-![Restaurant Listing](screenshots/restaurant_listing.png)
+### 2. Registration 
+![Registration](Screenshot/registration_page.jpg)
 
-### 3. Review Submission
-![Review Submission](screenshots/review_submission.png)
+### 3. Home Screen
+![Home Screen](Screenshot/restaurants_list.jpg)
 
-### 4. Admin Dashboard
-![Admin Dashboard](screenshots/admin_dashboard.png)
+### 4. Restaurant Details
+![Resturants Details](Screenshot/restaurant_details.jpg)
 
-> **Note:** Add your actual screenshot images in a `screenshots` folder in the root directory for the links above to work.
+### 5. Review Submission
+![Review Submission](Screenshot/write_review.jpg)
+
+### 4. Restaurant Menu
+![Menu List](Screenshot/Menu_list.jpg)
+
 
 ## Technologies Used
 - **Programming Language:** Kotlin (Android)

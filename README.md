@@ -41,13 +41,6 @@ Here are some screenshots that showcase the **ReviewBite** application:
 
 ## Technologies Used
 - **Programming Language:** Kotlin (Android)
-- **Frameworks & Libraries:** 
-  - **Jetpack Compose:** UI development
-  - **Room Database:** Local data management
-  - **Hilt:** Dependency injection
-  - **LiveData & StateFlow:** Reactive programming
-  - **Firebase:** Cloud storage for images
-  - **Google Maps API:** Location-based services
 - **IDE:** Android Studio
 - **Version Control:** Git
 
